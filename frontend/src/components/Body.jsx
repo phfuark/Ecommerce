@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 export default function Body(){
     return(
         <div className="w-80% h-full">
@@ -10,7 +10,7 @@ export default function Body(){
         </div>
     )
 }
-=======
+
 import { useEffect, useState } from "react";
 import Table from "./Table";
 
@@ -51,4 +51,4 @@ export default function Body() {
         </div>
     );
 }
->>>>>>> 43abfbb (06.02.2025 - Front (Estilo) finalizado)
+
