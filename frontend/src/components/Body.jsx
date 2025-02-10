@@ -15,14 +15,6 @@ import { useEffect, useState } from "react";
 import Table from "./Table";
 
 export default function Body() {
-    const [tasks, setTasks] = useState([]);
-
-    useEffect(() => {
-        fetch("http://localhost:3001/listAll")
-            .then(response => response.json())
-            .then(data => setTasks(data))
-            .catch(error => console.error("Error fetching tasks:", error));
-    }, []);
 
     return (
         <div className="w-[90%] h-screen flex flex-col gap-16 p-7">
@@ -43,7 +35,7 @@ export default function Body() {
                         <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
                     </svg>
                     <p>Finished Tasks</p>
-                    <p>{tasks.filter(task => task.completed).length}</p>
+                    <p></p>
                 </div>
             </div>
 
