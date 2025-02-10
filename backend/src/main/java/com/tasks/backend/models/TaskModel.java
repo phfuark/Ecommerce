@@ -1,6 +1,9 @@
 package com.tasks.backend.models;
 
 import java.sql.Date;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -32,4 +35,14 @@ public class TaskModel {
     @Column(name = "task_date", nullable = false)
     private Date taskDate;
 
+    public static boolean isValidDate(Date dateStr) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd"); // Adjust format as needed
+        try {
+            LocalDate.parse((CharSequence) dateStr, formatter);
+            return true;
+        } catch (DateTimeParseException e) {
+            return false;
+        }
+    }
 }
+
