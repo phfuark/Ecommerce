@@ -25,8 +25,8 @@ export default function Body(){
                     <p></p>
                 </div>
             </div>
-
-            <Table vector={tasks} />
+{/* 
+            <Table vector={tasks} /> */}
         </div>
     )
 }

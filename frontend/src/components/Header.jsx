@@ -46,9 +46,6 @@ export default function Header(){
                             <p class="bg-sky-500 text-gray-100 font-bold px-2 py-0.5 text-xs rounded-lg">1</p>
                         </a>
                     </li>
-                    
-
-                    
                 </ul>
             </div>
         </div>
