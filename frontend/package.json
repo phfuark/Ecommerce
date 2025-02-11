@@ -11,10 +11,6 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.3",
-<<<<<<< HEAD
-=======
-    "frontend": "file:",
->>>>>>> 43abfbb (06.02.2025 - Front (Estilo) finalizado)
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwindcss": "^4.0.3"
