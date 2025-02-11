@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Table from "./Table";
 
+
 export default function Body(){
     return(
         <div className="w-[90%] h-screen flex flex-col gap-16 p-7">
